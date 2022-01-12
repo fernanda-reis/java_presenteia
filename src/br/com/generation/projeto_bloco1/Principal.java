@@ -6,9 +6,6 @@ public class Principal {
 		
 		Inicio.iniciar();
 		
-		
-		
-
 	}
 
 }

@@ -3,12 +3,19 @@ package br.com.generation.projeto_bloco1;
 public class Beneficiador extends Pessoa {
 
 	private String email;
-	private char idadePref;
-	private char regiaoPref;
-	private char valorPref;
+	private int idadePref;
+	private int regiaoPref;
+	private int valorPref;
 	
-	public Beneficiador(String n, String r, int t, String e, char ip, char rp, char vp) {
-		super(n, r, t);
+	
+	
+	public Beneficiador(String n, int t) {
+		super(n, t);
+	}
+
+
+	public Beneficiador(String n, int t, String e, int ip, int rp, int vp) {
+		super(n, t);
 		email = e;
 		idadePref = ip;
 		regiaoPref = rp;
@@ -23,30 +30,28 @@ public class Beneficiador extends Pessoa {
 		this.email = email;
 	}
 
-	public char getIdadePref() {
+	public int getIdadePref() {
 		return idadePref;
 	}
 
-	public void setIdadePref(char idadePref) {
+	public void setIdadePref(int idadePref) {
 		this.idadePref = idadePref;
 	}
 
-	public char getRegiaoPref() {
+	public int getRegiaoPref() {
 		return regiaoPref;
 	}
 
-	public void setRegiaoPref(char regiaoPref) {
+	public void setRegiaoPref(int regiaoPref) {
 		this.regiaoPref = regiaoPref;
 	}
 
-	public char getValorPref() {
+	public int getValorPref() {
 		return valorPref;
 	}
 
-	public void setValorPref(char valorPref) {
+	public void setValorPref(int valorPref) {
 		this.valorPref = valorPref;
-	}
-
-	
+	}	
 
 }
